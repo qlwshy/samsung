@@ -1,0 +1,234 @@
+/* layout-start */
+/* header */
+.header{
+    border-bottom: 1px solid #dadada;
+    background-color: #fff;
+}
+.header-logo-container,
+.header-btn-container,
+.header-nav-container{
+    height: 64px;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+    width: 136px;
+    height: 100%;
+}
+.header-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-container{
+    height: 0px;
+    margin-top: -1px;
+}
+
+/* slider */
+.slider-container{
+    margin: 20px 0;
+}
+.slider-container .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.slider-text-title,
+.slider-text-subtitle,
+.slider-text-btns{
+    display: flex;
+    justify-content: center
+}
+.slider-text-btns{
+    margin-bottom: 20px;
+}
+.slider-text-container{
+    padding: 20px 0;
+}
+@media (min-width: 768px){
+    .slider-container .row{
+        display: flex;
+        align-items: center;
+    }
+}
+/*footer*/
+.footer-container {
+    padding: 15px 0;
+    background-color: #363636;
+    color: #a6a6a6;
+    font-size: 12px;
+    line-height: 2;
+}
+/* layout-end */
+
+/* component-start */
+/* btn-toggle */
+.btn-toggle{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-toggle:hover{
+    background-color: #f9f9f9;
+}
+.btn-toggle:hover .btn-toggle-bar{
+    background-color: #1428a0;
+}
+.btn-toggle-bar{
+    margin-top: 4px;
+    display: block;
+    width: 24px;
+    height: 4px;
+    background-color: #363636;
+    border-radius: 2px;
+}
+.btn-toggle-bar:first-child{
+    margin-top: 0;
+}
+.slider-rounded{
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-right: 14px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.slider-rounded:last-child{
+    margin-right: 0;
+}
+.slider-rounded:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*btn-share*/
+.btn-share {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+}
+.btn-share-weixin {
+    background-image: url(../img/weixin.svg);
+}
+.btn-share-weixin:hover {
+    background-image: url(../img/weixin-hover.svg);
+}
+.btn-share-weibo {
+    background-image: url(../img/weibo.svg);
+}
+.btn-share-weibo:hover {
+    background-image: url(../img/weibo-hover.svg);
+}
+/* component-end */
+
+/* content-start */
+/* header */
+.header-nav{
+    display: flex;
+    justify-content: flex-end;   
+    align-items: center;
+}
+.header-nav,
+.header-nav-item,
+.header-nav-link{
+    height: 100%;
+}
+.header-nav-item{
+    margin-right: 24px;
+
+}
+.header-nav-item:last-child{
+    margin-right: 0;
+}
+.header-nav-link{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* nav */
+.nav-link{
+    line-height: 40px;
+    font-weight: bold;
+}
+.nav-container{
+    overflow: hidden;
+    border-bottom: 1px solid #dadada;
+    transition: height 0.5s;
+}
+.btn-toggle-expand{
+    height: 201px;
+    margin-top: 0;
+}
+/* slider-container */
+.slider-container .row{
+    background-color: #f5f5f5;
+}
+.slider-text-title{
+    font-size: 30px;
+}
+.slider-text-subtitle{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+.slider-text-btns{
+    margin-top: 20px;
+}
+/* product */
+.product-item {
+    overflow: hidden;
+    display: block;
+}
+.product-img {
+    transition: transform 1s;
+}
+.product-img:hover {
+    transform: scale(1.2);
+}
+/* back */
+.back-container{
+    margin-top: 20px;
+    height: 60px;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    text-align: center;
+    line-height: 60px;
+}
+/* help */
+.helper-info-container{
+    padding: 20px 0;
+    font-size: 12px;
+}
+.helper-list{
+    margin-bottom: 10px;
+}
+.helper-list li{
+    padding: 5px 0;
+}
+.help-container{
+    background-color: #f7f7f7;
+}
+/* footer */
+.footer-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+@media (min-width: 768px){
+    .footer-link:last-child{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+}
+
+/* content-end */
